@@ -1,11 +1,11 @@
-var User = /** @class */ (function () {
-    function User(_name) {
+class User {
+    constructor(_name) {
         this.name = _name;
     }
-    return User;
-}());
-var hello = "hello world";
-hello = 23;
-var tom = new User("Том");
-var header = this.document.getElementById("header");
-header.innerHTML = "Привет!! " + tom.name + hello;
+}
+let hello = "hello world";
+const tom = new User("Том");
+let big = 1000n;
+let d = 1;
+const header = this.document.getElementById("header");
+header.innerHTML = `Привет!! " + ${tom.name} ${hello}, number ${d}, bigint: ${big}`;
